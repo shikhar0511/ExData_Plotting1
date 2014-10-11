@@ -8,7 +8,7 @@ data$Date <- as.Date(data$Date, format="%d/%m/%Y")
 png(file="plot2.png",width=480,height=480)
 #Plot the plot 
 plot(data$Global_active_power,type="l",axes=FALSE,ylab="Global Active Power(kilowatts)",xlab="")
-axis(side=1,at=c(0,nrow(data)/2,nrow(data)),label=c("Thursday","Friday","Saturday"))
+axis(side=1,at=c(0,nrow(data)/2,nrow(data)),label=c("Thu","Fri","Sat"))
 axis(side=2,at=c(0,2,4,6))
 box(which="plot")
 #Close the PNG device so that a png file of histogram is formed 
